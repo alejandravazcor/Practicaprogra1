@@ -1,9 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2023-10-23T15:23:30.757Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" etag="vopATxh0CpMh6C9a9Bwl" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-23T15:37:00.795Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" etag="vmOZpsQG5YK2WHKE-GS6" version="22.0.6" type="github">
   <diagram id="Yju2vLFU_YLqso0a81CT" name="Página-1">
-    <mxGraphModel dx="506" dy="502" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="647" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AIbf83jiUctUVz-V1hhZ-1" target="AIbf83jiUctUVz-V1hhZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-1" value="interfaz" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="170" width="73" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-4" value="src.interfaz.Interfaz" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="273" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-5" value="-Marca:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="AIbf83jiUctUVz-V1hhZ-4">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-6" value="-Color:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="AIbf83jiUctUVz-V1hhZ-4">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-7" value="-Precio:Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="AIbf83jiUctUVz-V1hhZ-4">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AIbf83jiUctUVz-V1hhZ-9" target="AIbf83jiUctUVz-V1hhZ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AIbf83jiUctUVz-V1hhZ-9" target="AIbf83jiUctUVz-V1hhZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-9" value="src" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="453" y="152" width="76" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-10" value="aplicación" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="431" y="238" width="61" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AIbf83jiUctUVz-V1hhZ-12" target="AIbf83jiUctUVz-V1hhZ-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-12" value="concesionario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="609" y="152" width="76" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AIbf83jiUctUVz-V1hhZ-14" value="&lt;ul style=&quot;list-style-type: &#39;—&amp;nbsp;&amp;nbsp;&#39;&quot;&gt;-﻿﻿concesionario: ArrayList&amp;lt;Vehiculo&amp;gt;&lt;/ul&gt;&lt;ul style=&quot;list-style-type: &#39;—&amp;nbsp;&amp;nbsp;&#39;&quot;&gt;-nombreFichero : String&lt;/ul&gt;&lt;ul style=&quot;list-style-type: &#39;—&amp;nbsp;&amp;nbsp;&#39;&quot;&gt;+ Concesionario()&lt;/ul&gt;&lt;ul style=&quot;list-style-type: &#39;—&amp;nbsp;&amp;nbsp;&#39;&quot;&gt;+ add( Vehiculo)&lt;/ul&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;+ annadir(Vehículo)&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;-﻿﻿cargarVehiculo()&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;-﻿﻿volcarVehiculo()&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;+ generarHojaCalculo()&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="686" y="243" width="163" height="200" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
