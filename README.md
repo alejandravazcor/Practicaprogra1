@@ -4,7 +4,7 @@ Esta aplicación está creada con el propósito de funcionar como un catálogo, 
 ## Instalación 
 Para instalar el programa debe escribir "make jar"
 ## Ejecución 
-Para ejecutar debe escribir "java -jar añadir <Marca> <Color> <Precio>
+Para ejecutar debe escribir "java -jar añadir <Marca> <Color> <Precio>"
 Por ejemplo, "java -jar añadir "Mercedes" "Rojo" 408000
 ## Uso del *make*
 # Suprime los directorios bin y html, elimina los ficheros .jar, los .class y .txt.
