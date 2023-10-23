@@ -16,4 +16,8 @@ Por ejemplo, "java -jar añadir "Mercedes" "Rojo" 408000
 ## Crea el directorio html y los ficheros .html.
     make javadoc
 ## Estructura interna de la aplicacion
-La aplicación esta estructurada en dos partes negocio y presenatación 
+La aplicación esta estructurada en dos partes negocio y presentación:
+## Negocio 
+En negocio se encuentra la clase Concesionario, esta se encarga de gestionar la información de vehículos en un concesionario. Además, de la clase Vehiculo 
+## Presentación
+En presentación encontramos la Interfaz de Usuario es la clase principal que contiene la lógica para interactuar con el programa.
