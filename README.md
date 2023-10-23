@@ -15,4 +15,4 @@ Por ejemplo, "java -jar añadir "Mercedes" "Rojo" 408000
     make jar
 ## Crea el directorio html y los ficheros .html.
     make javadoc
-
+## Estructura interna de la aplicacion
