@@ -11,15 +11,16 @@ public class Concesionario{
 	public Concesionario(){
 		cargarVehiculo();
 	}
-	//Este método recibe un objeto de la clase Vehiculo como argumento y lo agrega
-	a la lista vehiculoConcesionario. Luego, llama al metodo volcarVehiculoConcesionario para guardar la información actualizada en un archivo CSV 
+	//Este método recibe un objeto de la clase Vehiculo como argumento y lo agrega a la lista vehiculoConcesionario. Luego, llama al metodo volcarVehiculoConcesionario para guardar la información actualizada en un archivo CSV 
 	public void annadir (Vehiculo vehiculo){
 		vehiculoConcesionario.add(vehiculo);
 		volcarVehiculoConcesionario();
 	}
+	//Este método permite obtener la lista de vehículos almacenados en el concesionario
 	public ArrayList<Vehiculo> getVehiculoConcesionario(){
 		return vehiculoConcesionario;
 	}
+	//Este método guarda la información de los vehículos en un archivo CSV llamado "concesionario.csv". Utiliza un bucle para recorrer la lista de vehículos y escribe cada vehículo en una línea del archivo CSV. Cada línea contiene información como la marca, el color y el precio del vehículo.
 private void volcarVehiculoConcesionario(){
 	try{
 		FileWriter fw = new FileWriter ("concesionario.csv");
@@ -33,6 +34,7 @@ private void volcarVehiculoConcesionario(){
 		System.err.println(ex);
 	}
 }
+	//Este método se utiliza para cargar la información de los vehículos desde el archivo "concesionario.csv" al iniciar el programa. Verifica si el archivo existe y, si no existe, lo crea. Luego, utiliza un Scanner para leer el contenido del archivo CSV, parsear los datos y crear objetos Vehiculo, que son agregados a la lista vehiculoConcesionario.
 private void cargarVehiculo(){
 	try{
 		File fichero = new File("concesionario.csv");
