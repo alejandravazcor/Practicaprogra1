@@ -1,9 +1,9 @@
 # Practicaprogra1
-#CatalogoCoches
+# CatalogoCoches
 Esta aplicación está creada con el propósito de funcionar como un catálogo, en el que el usuario pueda añadir y ver impreso por pantalla los coches que este haya añadido con sus atributos correspondientes.
-##Instalación 
+## Instalación 
 Para instalar el programa debe escribir "make jar"
-##Ejecución 
+## Ejecución 
 Para ejecutar debe escribir "java -jar añadir <Marca> <Color> <Precio>
 Por ejemplo, "java -jar añadir "Mercedes" "Rojo" 408000
 ## Uso del *make*
