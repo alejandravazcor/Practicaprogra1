@@ -11,8 +11,8 @@ Por ejemplo, "java -jar añadir "Mercedes" "Rojo" 408000
     make limpiar
 ## Crea el directorio bin y allí almacena los .class que ha compilado durante la ejecución del make. 
     make compilar
-# Crea el .jar
+## Crea el .jar
     make jar
-# Crea el directorio html y los ficheros .html.
+## Crea el directorio html y los ficheros .html.
     make javadoc
 
