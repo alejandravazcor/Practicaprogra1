@@ -11,6 +11,8 @@ public class Concesionario{
 	public Concesionario(){
 		cargarVehiculo();
 	}
+	//Este método recibe un objeto de la clase Vehiculo como argumento y lo agrega
+	a la lista vehiculoConcesionario. Luego, llama al metodo volcarVehiculoConcesionario para guardar la información actualizada en un archivo CSV 
 	public void annadir (Vehiculo vehiculo){
 		vehiculoConcesionario.add(vehiculo);
 		volcarVehiculoConcesionario();
