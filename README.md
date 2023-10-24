@@ -21,3 +21,4 @@ La aplicación esta estructurada en dos partes negocio y presentación:
 En negocio se encuentra la clase Concesionario, esta se encarga de gestionar la información de vehículos en un concesionario. Además, de la clase Vehiculo que representa un objeto de vehículo.
 ### Presentación
 En presentación encontramos la Interfaz de Usuario es la clase principal que contiene la lógica para interactuar con el programa.
+![class diagram](https://github.com/alejandravazcor/Practicaprogra1/assets/145661135/33674fed-c6ea-4553-80dc-96128ed81a58)
