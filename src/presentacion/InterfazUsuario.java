@@ -14,14 +14,15 @@ public class InterfazUsuario{
 		Concesionario concesionario = new Concesionario();
 		if (instruccion[0].equalsIgnoreCase( "mostrar") && instruccion.length == 1){
 			mostrarVehiculo(concesionario);
-		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 4){
-			Vehiculo vehiculo = new Vehiculo( instruccion[1], instruccion[2], Float.parseFloat(instruccion [3]));
+		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 5){
+			int instruccion3 = Integer.parseInt(instruccion[3]);
+			Vehiculo vehiculo = new Vehiculo( instruccion[1], instruccion[2], Integer.parseInt(instruccion [3]), Integer.parseInt(instruccion [4]));
 			concesionario.annadir(vehiculo);
-}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
-	ayuda();
-}else{ System.out.println(rojo+ "El formato de utilizado en la entrada es incorrecto" + blanco);
-	ayuda();
-}
+		}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
+			ayuda();
+		}else{ System.out.println(rojo+ "El formato de utilizado en la entrada es incorrecto" + blanco);
+			ayuda();
+		}
 	}
 	//Obtiene una lista de vehículos del concesionario utilizando el método getVehiculoConcesionario y la almacena en una lista llamada listaVehiculo. Luego, recorre la lista de vehículos y los imprime en la consola.
 private static void mostrarVehiculo(Concesionario concesionario){

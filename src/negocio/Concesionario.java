@@ -13,10 +13,16 @@ public class Concesionario{
 	}
 	//Este método recibe un objeto de la clase Vehiculo como argumento y lo agrega a la lista vehiculoConcesionario. Luego, llama al metodo volcarVehiculoConcesionario para guardar la información actualizada en un archivo CSV 
 	public void annadir (Vehiculo vehiculo){
+		if (!vehiculoConcesionario.isEmpty()) vehiculo.setId(vehiculoConcesionario.get(vehiculoConcesionario.size() - 1).getId()+1);
 		vehiculoConcesionario.add(vehiculo);
 		volcarVehiculoConcesionario();
 	}
 	//Este método permite obtener la lista de vehículos almacenados en el concesionario
+	public void borrar(Vehiculo vehiculo) {
+		vehiculoConcesionario.remove(vehiculo);
+		volcarVehiculoConcesionario();
+	}
+
 	public ArrayList<Vehiculo> getVehiculoConcesionario(){
 		return vehiculoConcesionario;
 	}
@@ -25,7 +31,7 @@ private void volcarVehiculoConcesionario(){
 	try{
 		FileWriter fw = new FileWriter ("concesionario.csv");
 		for(Vehiculo vehiculo : vehiculoConcesionario){
-			fw.write(vehiculo.getMarca() + "," +
+			fw.write(vehiculo.getId() + ","+ vehiculo.getMarca() + "," +
 					vehiculo.getColor() + "," +
 					vehiculo.getPrecio() + "\n");
 		}
@@ -45,13 +51,16 @@ private void cargarVehiculo(){
 		while(sc.hasNext()){
 			Vehiculo vehiculo = new Vehiculo(sc.next(),
 					sc.next(),
-					Float.parseFloat(sc.next()));
+					Integer.parseInt(sc.next()),
+					Integer.parseInt(sc.next()));
 	vehiculoConcesionario.add(vehiculo);
 	}
 	sc.close();
-}catch(IOException ex){
-	System.err.println("No hay habitantes inscritos");
+}catch(IOException ex) {
+		System.err.println("No hay habitantes inscritos");
+	}
+
 }
 }
-}
+
 
