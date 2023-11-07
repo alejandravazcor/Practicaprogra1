@@ -1,3 +1,6 @@
 *.class
 html
 *.swp
+*.iml
+.idea
+

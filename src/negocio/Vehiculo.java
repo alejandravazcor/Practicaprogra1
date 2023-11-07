@@ -6,13 +6,18 @@ public class Vehiculo{
 	private String color;
 	private int precio;
 	private int id;
-	//constructor con parametros por lo que no uso setters
+	/**
+	 * constructor con parametros por lo que no uso setters
+	 */
 	public Vehiculo(String marca, String color, int precio, int id){
 		this.marca = marca;
 		this.color = color;
 		this.precio = precio;
 		this.id = id;
-		//Asigna los valores de los parametros a los atributos correspondientes
+		/**
+		 * Asigna los valores de los parametros a los atributos correspondientes
+		 */
+
 	}
 
 	public Vehiculo(String next, String next1, String next2) {
@@ -22,7 +27,9 @@ public class Vehiculo{
 	}
 	public Vehiculo(int Id){ this.id = id;}
 
-	//metodos para acceder a los atributos
+	/**
+	 * metodos para acceder a los atributos
+	 */
 	public void setPrecio(){
 		this.precio = precio;
 	}
@@ -46,7 +53,9 @@ public class Vehiculo{
 		this.id = id;
 	}
 
-	//Para crear una cadena de chars para que asi cuando salga por pantalla pueda salir esa cadena de atributos y no la direccion de memoria
+	/**
+	* Para crear una cadena de chars para que asi cuando salga por pantalla pueda salir esa cadena de atributos y no la direccion de memoria
+	 */
 	@Override
 	public String toString(){
 		return  getId() + "," + getMarca() + "," + getColor() + "," + getPrecio();
