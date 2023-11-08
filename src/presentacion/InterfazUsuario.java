@@ -16,18 +16,18 @@ public class InterfazUsuario{
 		Concesionario concesionario = new Concesionario();
 		if (instruccion.length == 0 ){
 			System.out.println("Añadir parametros");
-			ayuda ();
+			ayuda();
 		}
 		else if (instruccion[0].equalsIgnoreCase( "mostrar") && instruccion.length == 1 ){
 			mostrarVehiculo(concesionario);
-		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 5){
-			int instruccion3 = Integer.parseInt(instruccion[3]);
-			Vehiculo vehiculo = new Vehiculo( instruccion[1], instruccion[2], Integer.parseInt(instruccion [3]), Integer.parseInt(instruccion [4]));
+		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 4){
+			int instruccion3 = Integer.parseInt(instruccion[3]); 
+			Vehiculo vehiculo = new Vehiculo (instruccion[1], instruccion[2], Integer.parseInt(instruccion[3]));
 			concesionario.annadir(vehiculo);
 		}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
 			ayuda();
-		} else if (instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 5) {
-			Vehiculo vehiculo = new Vehiculo(instruccion[1], instruccion[2],Integer.parseInt(instruccion[3]), Integer.parseInt(instruccion[4]));
+		} else if (instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 2) {
+			Vehiculo vehiculo = new Vehiculo(Integer.parseInt(instruccion[1]));
 			concesionario.borrar(vehiculo);
 		} else {
 			System.out.println(rojo + "El formato de utilizado en la entrada es incorrecto" + blanco);
@@ -56,21 +56,21 @@ private static void ayuda(){
 
 System.out.println(negrita+"FORMATO"+normal);
 System.out.println("\tPara añadir un nuevo vehiculo, se escribe:\n");
-System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal añadir <marca> <color> <precio>" + normal + "\n");
+System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal añadir <marca> <color> <precio> <Id>" + normal + "\n");
 System.out.println("\tPara mostrar los vehiculos del concesionario, se teclea:\n");
 System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal mostrar" + normal + "\n");
 System.out.println("\tPara mostrar esta ayuda, se escribe:\n");
 System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal ayuda" + normal + "\n");
 System.out.println(negrita+"Ejemplos"+normal);
 System.out.println("\tEjemplo 1\n");
-System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal añadir Mercedes rojo 10" + normal + "\n");
+System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal añadir Mercedes rojo 1000 12 " + normal + "\n");
 System.out.println("\tEjemplo 2\n");
 System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal mostrar" + normal+ "\n");
 System.out.println("\tEjemplo 3\n");
 System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal ayuda" + normal + "\n");
 System.out.println("\tPara borrar un vehiculo, se escribe:\n");
-System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal borrar <marca> <color> <precio> " + normal + "\n");
+System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal borrar <marca> <color> <precio> <Id> " + normal + "\n");
 System.out.println("\tEjemplo 4\n");
-System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal borrar Mercedes rojo 10" + normal + "\n");
+System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal borrar Mercedes rojo 1000 12" + normal + "\n");
 }
 }

@@ -2,30 +2,30 @@ package negocio;
 import java.math.BigDecimal;
 public class Vehiculo{
 	//declaracion de atributos
+	private int id;
 	private String marca;
 	private String color;
 	private int precio;
-	private int id;
 	/**
 	 * constructor con parametros por lo que no uso setters
 	 */
-	public Vehiculo(String marca, String color, int precio, int id){
+	public Vehiculo(int id, String marca, String color, int precio){
+		this.id = id;
 		this.marca = marca;
 		this.color = color;
-		this.precio = precio;
-		this.id = id;
+		this.precio = precio;;
 		/**
 		 * Asigna los valores de los parametros a los atributos correspondientes
 		 */
 
 	}
+public Vehiculo(String marca, String color, int precio){
+	this.marca = marca;
+	this.color = color;
+	this.precio = precio;
+}
 
-	public Vehiculo(String next, String next1, String next2) {
-		this.marca = marca;
-		this.color = color;
-		this.precio = precio;
-	}
-	public Vehiculo(int Id){ this.id = id;}
+	public Vehiculo(int id){ this.id = id;}
 
 	/**
 	 * metodos para acceder a los atributos
@@ -35,7 +35,9 @@ public class Vehiculo{
 	}
 	public String getMarca(){
 		return marca;
-		//Metodo para obtener la marca
+	/**
+	* Metodo para obtener la marca
+	*/
 	}
 	public String getColor(){
 		return color;
@@ -58,7 +60,7 @@ public class Vehiculo{
 	 */
 	@Override
 	public String toString(){
-		return  getId() + "," + getMarca() + "," + getColor() + "," + getPrecio();
+		return  getId() + "," +  getMarca() + "," + getColor() + "," + getPrecio();
 	}
 	@Override
 	public boolean equals(Object obj){

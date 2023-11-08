@@ -20,6 +20,7 @@ public class Concesionario{
 
 	public void annadir (Vehiculo vehiculo){
 		if (!vehiculoConcesionario.isEmpty()) vehiculo.setId(vehiculoConcesionario.get(vehiculoConcesionario.size() - 1).getId()+1);
+		else vehiculo.setId(1);
 		vehiculoConcesionario.add(vehiculo);
 		volcarVehiculoConcesionario();
 	}
@@ -70,9 +71,9 @@ private void cargarVehiculo(){
 		Scanner sc = new Scanner(fichero);
 		sc.useDelimiter(",|\n");
 		while(sc.hasNext()){
-			Vehiculo vehiculo = new Vehiculo(sc.next(),
+			Vehiculo vehiculo = new Vehiculo(Integer.parseInt(sc.next()),
 					sc.next(),
-					Integer.parseInt(sc.next()),
+					sc.next(),
 					Integer.parseInt(sc.next()));
 	vehiculoConcesionario.add(vehiculo);
 	}
