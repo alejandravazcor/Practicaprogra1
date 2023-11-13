@@ -25,7 +25,19 @@ Por ejemplo, "java -jar añadir "Mercedes" "Rojo" 408000
     make javadoc
 ## Ayuda
 ```console
-java -jar concesionario.jar ayuda
+java -jar aplicacionVehiculo.jar ayuda
+```
+## Añadir 
+```console
+java -jar aplicacionVehiculo.jar añadir <marca> <color> <precio>
+```
+## Borrar
+```console
+java -jar aplicacionVehiculo.jar borrar <ID> 
+```
+## Modificar
+```console
+java -jar aplicacionVehiculo.jar modificar <ID> <marca> <color> <precio>
 ```
 ## Estructura interna de la aplicacion
 La aplicación esta estructurada en dos partes negocio y presentación:
