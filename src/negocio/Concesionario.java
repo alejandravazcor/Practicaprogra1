@@ -81,8 +81,21 @@ private void cargarVehiculo(){
 }catch(IOException ex) {
 		System.err.println("No hay habitantes inscritos");
 	}
+}
+public void modificar(Vehiculo vehiculomodificado){
+	for (Vehiculo vehiculo: vehiculoConcesionario){
+		if (vehiculo.getId() == vehiculomodificado.getId()){
+			vehiculo.setMarca(vehiculomodificado.getMarca());
+			vehiculo.setColor(vehiculomodificado.getColor());
+			vehiculo.setPrecio(vehiculomodificado.getPrecio());
+			volcarVehiculoConcesionario();
+			return;
+	}
+}
+System.out.println("El vehiculo con el ID :"+ vehiculomodificado.getId() +" no se ha encontrado");
+}
 
 }
-}
+
 
 

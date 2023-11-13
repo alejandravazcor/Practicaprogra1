@@ -67,4 +67,7 @@ public Vehiculo(String marca, String color, int precio){
 		Vehiculo veh = (Vehiculo) obj;
 		return id == veh.id;
 	}
+public void setMarca(String marca){this.marca = marca;}
+public void setColor(String color){this.color = color;}
+public void setPrecio(int precio ){this.precio = precio;}
 }

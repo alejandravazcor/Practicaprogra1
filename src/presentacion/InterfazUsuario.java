@@ -20,10 +20,12 @@ public class InterfazUsuario{
 		}
 		else if (instruccion[0].equalsIgnoreCase( "mostrar") && instruccion.length == 1 ){
 			mostrarVehiculo(concesionario);
-		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 4){
-			int instruccion3 = Integer.parseInt(instruccion[3]); 
+		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 4){ 
 			Vehiculo vehiculo = new Vehiculo (instruccion[1], instruccion[2], Integer.parseInt(instruccion[3]));
 			concesionario.annadir(vehiculo);
+		}else if (instruccion[0].equalsIgnoreCase("modificar") && instruccion.length == 5){
+			Vehiculo vehiculomodificado = new Vehiculo(Integer.parseInt(instruccion[1]), instruccion[2], instruccion[3], Integer.parseInt(instruccion[4]));
+			concesionario.modificar(vehiculomodificado);
 		}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
 			ayuda();
 		} else if (instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 2) {
