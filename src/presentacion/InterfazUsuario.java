@@ -54,11 +54,14 @@ private static void ayuda(){
 	System.out.println("\tEsta aplicacion ofrece las siguientes funcionalidades:\n\n" + 
 			"\t- Permite añadir un nuevo vehiculo al concesionario\n" +
 			"\t- Permite borrar un  vehiculo del concesionario\n" +
-			"\t- Permite mostrar los vehiculos del concesionario");
+			"\t- Permite mostrar los vehiculos del concesionario\n"+
+			 "\t- Permite modificar los vehiculos del concesionario");
 
 System.out.println(negrita+"FORMATO"+normal);
 System.out.println("\tPara añadir un nuevo vehiculo, se escribe:\n");
-System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal añadir <marca> <color> <precio> <Id>" + normal + "\n");
+System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal añadir <marca> <color> <precio>" + normal + "\n");
+System.out.println("\tPara añadir un nuevo vehiculo, se escribe:\n");
+System.out.println("\t\t" + negrita + "java -cp bin puntoEntrada.Principal modificar <Id> <marca> <color> <precio> <Id>" + normal + "\n");
 System.out.println("\tPara mostrar los vehiculos del concesionario, se teclea:\n");
 System.out.println("\t\t" + negrita +"java -cp bin puntoEntrada.Principal mostrar" + normal + "\n");
 System.out.println("\tPara mostrar esta ayuda, se escribe:\n");
