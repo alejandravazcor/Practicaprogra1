@@ -9,8 +9,13 @@ public class Vehiculo{
 	private String color;
 	private int precio;
 	/**
-	 * constructor con parametros por lo que no uso setters
-	 */
+     * Constructor de la clase Vehiculo que recibe todos los parámetros.
+     * 
+     * @param id     El identificador único del vehículo.
+     * @param marca  La marca del vehículo.
+     * @param color  El color del vehículo.
+     * @param precio El precio del vehículo.
+     */
 	public Vehiculo(int id, String marca, String color, int precio){
 		this.id = id;
 		this.marca = marca;
@@ -21,45 +26,84 @@ public class Vehiculo{
 		 */
 
 	}
+	/**
+     * Constructor de la clase Vehiculo que recibe la marca, color y precio del vehículo.
+     * Este constructor no establece un ID, puede ser usado para crear vehículos nuevos sin ID específico.
+     * 
+     * @param marca  La marca del vehículo.
+     * @param color  El color del vehículo.
+     * @param precio El precio del vehículo.
+     */
 public Vehiculo(String marca, String color, int precio){
 	this.marca = marca;
 	this.color = color;
 	this.precio = precio;
 }
+	
+	/**
+     * Constructor de la clase Vehiculo que recibe solo el ID del vehículo.
+     * 
+     * @param id El identificador único del vehículo.
+     */
 
 	public Vehiculo(int id){ this.id = id;}
 
 	/**
-	 * metodos para acceder a los atributos
-	 */
+     * Método para establecer el precio del vehículo.
+     * 
+     * @param precio El precio a asignar al vehículo.
+     */
 	public void setPrecio(){
 		this.precio = precio;
 	}
+	/**
+     * Método para obtener la marca del vehículo.
+     * 
+     * @return La marca del vehículo.
+     */
 	public String getMarca(){
 		return marca;
 	/**
-	* Metodo para obtener la marca
-	*/
+     * Método para obtener el color del vehículo.
+     * 
+     * @return El color del vehículo.
+     */
 	}
 	public String getColor(){
 		return color;
 	}
+	/**
+     * Método para obtener el color del vehículo.
+     * 
+     * @return El color del vehículo.
+     */
 
 	public int getPrecio(){
 		return precio;
 	}
+	 /**
+     * Método para obtener el precio del vehículo.
+     * 
+     * @return El precio del vehículo.
+     */
 
 	public int getId() {
 		return id;
 	}
+	/**
+     * Método para obtener el ID del vehículo.
+     * 
+     * @return El ID del vehículo.
+     */
 
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	/**
-	* Para crear una cadena de chars para que asi cuando salga por pantalla pueda salir esa cadena de atributos y no la direccion de memoria
-	 */
+     * Método para establecer el ID del vehículo.
+     * 
+     * @param id El nuevo ID a asignar al vehículo.
+     */
 	@Override
 	public String toString(){
 		return  getId() + "," +  getMarca() + "," + getColor() + "," + getPrecio();
