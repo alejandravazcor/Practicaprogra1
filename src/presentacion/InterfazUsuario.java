@@ -12,6 +12,11 @@ public class InterfazUsuario{
 	* Se definen variables de formato para cambiar el color y formato del texto en la consola. Esto se hace utilizando códigos de escape ANSI
 	* Este método recibe un arreglo de cadenas de texto llamado instruccion.Crea una instancia de la clase Concesionario.Luego, el método verifica el contenido del primer elemento del arreglo instruccion para determinar qué acción debe realizar: Si el primer elemento es "mostrar" y la longitud del arreglo es 1, llama al método mostrarVehiculo para mostrar los vehículos en el concesionario. Si el primer elemento es "añadir" y la longitud del arreglo es 4, crea un objeto Vehiculo y lo añade al concesionario utilizando el método annadir. Si el primer elemento es "ayuda" y la longitud del arreglo es 1, llama al método ayuda para mostrar un mensaje de ayuda. Si ninguna de las condiciones anteriores se cumple, se imprime un mensaje de error en rojo y se muestra el mensaje de ayuda
 	 */
+	/**
+ * Ejecuta las operaciones del concesionario basadas en las instrucciones proporcionadas.
+ * 
+ * @param instruccion Un array de cadenas que contiene las instrucciones a ejecutar.
+ */
 	public static void ejecutar(String[] instruccion){
 		Concesionario concesionario = new Concesionario();
 		if (instruccion.length == 0 ){
