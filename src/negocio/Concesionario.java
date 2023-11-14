@@ -91,6 +91,10 @@ public void modificar(Vehiculo vehiculomodificado){
 			volcarVehiculoConcesionario();
 			return;
 	}
+/**
+* Este método toma un objeto de tipo Vehiculo como parámetro. Presumiblemente, este objeto contiene información actualizada que se utilizará para modificar u
+* comprueba si el ID del vehículo actual en el bucle coincide con el ID del vehículo que se quiere modificar
+*/		
 }
 System.out.println("El vehiculo con el ID :"+ vehiculomodificado.getId() +" no se ha encontrado");
 }
