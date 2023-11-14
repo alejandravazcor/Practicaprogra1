@@ -46,5 +46,6 @@ En negocio se encuentra la clase Concesionario, esta se encarga de gestionar la 
 ### Presentación
 En presentación encontramos la Interfaz de Usuario es la clase principal que contiene la lógica para interactuar con el programa.
 
-El siguiente diagrama UML muestra un diagraam de las diferentes clases
+El siguiente diagrama UML muestra un diagrama de las diferentes clases:
+![Diagrama UML](diagrama.png)
 
