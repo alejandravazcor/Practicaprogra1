@@ -38,6 +38,16 @@ public class InterfazUsuario{
 	}
 	/**
 	 *Obtiene una lista de vehículos del concesionario utilizando el método getVehiculoConcesionario y la almacena en una lista llamada listaVehiculo. Luego, recorre la lista de vehículos y los imprime en la consola.
+	 * public static void ejecutar(String[] instruccion){: Este método está definido como public, lo que significa que es accesible desde fuera de la clase sin necesidad de instanciar un objeto de esa clase. Es estático (static), lo que implica que pertenece a la clase en sí misma en lugar de a una instancia específica de la clase. Toma un arreglo de strings llamado instruccion como parámetro.
+	 * Concesionario concesionario = new Concesionario();: Se crea una nueva instancia de la clase Concesionario. Esto probablemente inicializa una estructura de datos o una lista que contiene vehículos dentro del concesionario.
+	 * El método procede a verificar diferentes condiciones basadas en el contenido del arreglo instruccion
+	 * Comprueba si instruccion tiene longitud cero, en cuyo caso imprime un mensaje pidiendo agregar parámetros y llama al método ayuda() para proporcionar ayuda con el uso del programa.
+	 * Verifica si la primera instrucción es "mostrar" y si la longitud es igual a 1, en cuyo caso llama al método mostrarVehiculo() pasando el objeto concesionario.
+	 * Si la instrucción es "añadir" y la longitud es 4, crea un nuevo objeto Vehiculo con los parámetros proporcionados en instruccion[1], instruccion[2] e Integer.parseInt(instruccion[3]), y luego llama al método annadir() del objeto concesionario para agregar el vehículo.
+	 * Si la instrucción es "modificar" y la longitud es 5, crea un nuevo objeto Vehiculo con los parámetros proporcionados en instruccion[1], instruccion[2], instruccion[3] e Integer.parseInt(instruccion[4]), y luego llama al método modificar() del objeto concesionario para modificar el vehículo correspondiente.
+	 * Si la instrucción es "ayuda" y la longitud es 1, llama al método ayuda().
+	 * Si la instrucción es "borrar" y la longitud es 2, crea un nuevo objeto Vehiculo con el parámetro proporcionado en Integer.parseInt(instruccion[1]), y luego llama al método borrar() del objeto concesionario para eliminar el vehículo correspondiente.
+	 * En caso contrario, imprime un mensaje indicando que el formato utilizado en la entrada es incorrecto y llama al método ayuda() para proporcionar ayuda sobre el uso correcto del programa.
 	 */
 private static void mostrarVehiculo(Concesionario concesionario){
 	ArrayList<Vehiculo> listaVehiculo = concesionario.getVehiculoConcesionario();
