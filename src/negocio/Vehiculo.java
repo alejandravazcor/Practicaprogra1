@@ -1,7 +1,9 @@
 package negocio;
 import java.math.BigDecimal;
 public class Vehiculo{
-	//declaracion de atributos
+/**
+* declaracion de atributos
+*/
 	private int id;
 	private String marca;
 	private String color;
