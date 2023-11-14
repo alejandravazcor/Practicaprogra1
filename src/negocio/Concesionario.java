@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class Concesionario{
 	/**
-	 * construtor de la clase padron
-	 */
+ * Clase que representa un concesionario de vehículos.
+ */
 
 	private ArrayList<Vehiculo> vehiculoConcesionario = new ArrayList<>();
 	public Concesionario(){
@@ -25,8 +25,13 @@ public class Concesionario{
 		volcarVehiculoConcesionario();
 	}
 	/**
-	 * Este método permite obtener la lista de vehículos almacenados en el concesionario
-	 */
+ * Añade un vehículo al concesionario.
+ * Si el concesionario no está vacío, asigna un ID al vehículo nuevo
+ * basado en el último ID existente incrementado en uno. En caso contrario,
+ * asigna al vehículo el ID 1.
+ *
+ * @param vehiculo El vehículo a añadir al concesionario.
+ */
 
 	public void borrar(Vehiculo vehiculo) {
 		vehiculoConcesionario.remove(vehiculo);
@@ -36,11 +41,17 @@ public class Concesionario{
 	public ArrayList<Vehiculo> getVehiculoConcesionario(){
 		return vehiculoConcesionario;
 	}
+/**
+ * Elimina un vehículo del concesionario.
+ * 
+ * @param vehiculo El vehículo a eliminar del concesionario.
+ */
 
-
-	/**
-	 * Este método guarda la información de los vehículos en un archivo CSV llamado "concesionario.csv". Utiliza un bucle para recorrer la lista de vehículos y escribe cada vehículo en una línea del archivo CSV. Cada línea contiene información como la marca, el color y el precio del vehículo.
-	 */
+/**
+ * Obtiene la lista de vehículos del concesionario.
+ * 
+ * @return La lista de vehículos del concesionario.
+ */	
 	private void volcarVehiculoConcesionario(){
 	try{
 		FileWriter fw = new FileWriter ("concesionario.csv");
@@ -92,9 +103,10 @@ public void modificar(Vehiculo vehiculomodificado){
 			return;
 	}
 /**
-* Este método toma un objeto de tipo Vehiculo como parámetro. Presumiblemente, este objeto contiene información actualizada que se utilizará para modificar u
-* comprueba si el ID del vehículo actual en el bucle coincide con el ID del vehículo que se quiere modificar
-*/		
+ * Modifica un vehículo existente en el concesionario con la información proporcionada en un vehículo modificado.
+ * 
+ * @param vehiculomodificado El vehículo con la información actualizada que se utilizará para modificar el vehículo en el concesionario.
+ */		
 }
 System.out.println("El vehiculo con el ID :"+ vehiculomodificado.getId() +" no se ha encontrado");
 }
