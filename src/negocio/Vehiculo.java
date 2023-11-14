@@ -67,6 +67,13 @@ public Vehiculo(String marca, String color, int precio){
 		Vehiculo veh = (Vehiculo) obj;
 		return id == veh.id;
 	}
+/**
+* public boolean equals(Object obj) {: Este método es una implementación de la interfaz equals. Recibe un objeto obj como parámetro y devuelve un valor booleano que indica si el objeto actual es igual al objeto pasado como argumento.
+* Vehiculo veh = (Vehiculo) obj;: Esta línea intenta convertir el objeto obj a un objeto del tipo Vehiculo. Se realiza un casting explícito de Object (que es la clase base) a Vehiculo. Esto puede generar una excepción ClassCastException si el objeto obj no es realmente una instancia de la clase Vehiculo.
+* return id == veh.id;: Aquí se compara el atributo id del objeto actual (this) con el atributo id del objeto veh (que es el objeto convertido a tipo Vehiculo). La comparación se hace utilizando el operador ==, lo que compara si los valores numéricos de los identificadores son iguales.
+* Este método equals personalizado en la clase Vehiculo compara la igualdad basada únicamente en los valores de los atributos id de dos objetos Vehiculo. Si los identificadores (id) de los dos objetos son iguales, el método devuelve true; de lo contrario, devuelve false.
+* @param marca
+*/
 public void setMarca(String marca){this.marca = marca;}
 public void setColor(String color){this.color = color;}
 public void setPrecio(int precio ){this.precio = precio;}
