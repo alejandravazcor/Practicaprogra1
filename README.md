@@ -49,3 +49,7 @@ En presentación encontramos la Interfaz de Usuario es la clase principal que co
 El siguiente diagrama UML muestra un diagrama de las diferentes clases:
 ![Diagrama UML](diagrama.png)
 
+## Licencia
+Copyright [2023] [Alejandra Vazquez Corbella]
+Este proyecto esta licenciado bajo la [Licencia Apache 2.0](https://www.apache.org/license/LICENSE-2.0). Consulte el archivo [LICENSE](LICENSE.txt) para obtener más detalles.
+
